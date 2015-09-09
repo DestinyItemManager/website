@@ -1,2 +1,2 @@
 # website
-DIM Website, http://destinyitemmanager.org
+DIM Website, http://destinyitemmanager.com
