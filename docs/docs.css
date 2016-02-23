@@ -1,0 +1,174 @@
+/* ----------------------------------------------------------------
+	CSS Specific to the Documentation
+
+	Version: 1.0
+-----------------------------------------------------------------*/
+
+
+#logo a { position: relative; }
+
+#logo a:after {
+	content: '3.1.1';
+	position: absolute;
+	top: 20px;
+	left: auto;
+	right: -25px;
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: 500;
+	color: #111;
+}
+
+
+/* ----------------------------------------------------------------
+	Docs
+-----------------------------------------------------------------*/
+
+.docs-navigation {
+	position: fixed;
+	top: 70px;
+	left: 0;
+	overflow: hidden;
+	overflow-y: auto;
+	overflow-y: scroll;
+	width: 280px;
+	height: 100%;
+	background-color: #F5F5F5;
+}
+
+.docs-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.docs-navigation > ul { margin: 40px 0; }
+
+.docs-navigation ul li { position: relative; }
+
+.docs-navigation ul ul {
+	margin: 0 0 5px;
+}
+
+.docs-navigation ul li:first-child { border-top: 0; }
+
+.docs-navigation ul a {
+	display: block;
+	position: relative;
+	padding: 5px 60px;
+	line-height: 24px;
+	font-weight: 500;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 1px;
+}
+
+.docs-navigation ul li:hover > a,
+.docs-navigation ul li.ui-tabs-active > a { font-weight: 700; }
+
+.docs-navigation ul ul { display: none; }
+
+.docs-navigation ul li.ui-tabs-active ul { display: block; }
+
+.docs-navigation ul ul a {
+	color: #666;
+	padding: 3px 60px 3px 75px;
+	letter-spacing: 0;
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: none;
+}
+
+.docs-navigation ul ul li:hover > a,
+.docs-navigation ul ul li.current > a {
+	color: #222;
+	font-weight: 500;
+}
+
+.docs-navigation ul ul li.current a:after {
+	content: "\e7a5";
+	position: absolute;
+	top: 3px;
+	right: 20px;
+	font-size: 14px;
+}
+
+.docs-content {
+	position: relative;
+	overflow: hidden;
+	margin-left: 250px;
+	padding: 60px 0 60px 40px;
+	min-height: 1000px;
+}
+
+.docs-content ul,
+.docs-content ol { margin: 30px 0; }
+
+.docs-content ul ul,
+.docs-content ol ol,
+.docs-content ul ol,
+.docs-content ol ul {
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+
+.page-section {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ----------------------------------------------------------------
+	Icons
+-----------------------------------------------------------------*/
+
+ul.docs-icons {
+	list-style: none;
+	margin: 0 -15px -20px;
+	padding: 0;
+}
+
+ul.docs-icons li {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 20px;
+	font-size: 16px;
+	padding: 0 15px;
+}
+
+
+ul.docs-icons li i {
+	position: relative;
+	top: 5px;
+	margin-right: 20px;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 24px;
+}
+
+ul.docs-icons li span {
+	display: inline-block;
+	line-height: 24px;
+}
+
+
+.show-grid [class^=col-],
+.show-grid [class^=col_] {
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#eee;
+    border:1px solid #ddd;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.show-grid [class^=col_] {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
