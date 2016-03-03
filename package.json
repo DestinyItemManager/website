@@ -1,0 +1,23 @@
+{
+  "name": "dim-website",
+  "version": "1.0.0",
+  "description": "DIM Website, http://destinyitemmanager.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DestinyItemManager/website"
+  },
+  "author": "DestinyItemManager",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DestinyItemManager/website/issues"
+  },
+  "homepage": "https://github.com/DestinyItemManager/website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5"
+  }
+}
